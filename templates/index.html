@@ -1,0 +1,131 @@
+{% extends "layout.html" %}
+
+{% block title %}
+{{ text.title }}
+{% endblock %}
+
+{% block favicon %}
+<link rel="icon" href="/static/images/homepage.png">
+{% endblock %}
+
+{% block body %}
+<!-- banner -->
+<div class="ds-banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
+                <figure>
+                    <img src="/static/images/profileKauan.jpg">
+                </figure>
+            </div>
+            <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
+                <section>
+                    <h1>
+                        Kauan Borges
+                    </h1>
+                    <br>
+                    <div class="display-6">
+                        Software Developer
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- banner -->
+<!-- about -->
+<div class="ds-about-section">
+    <div class="container">
+        <section>
+            <h2 class="ds-heading">{{ text.headers.about_me }}</h2>
+            <p>{{ text.about_me }}</p>
+            <div class="ds-button-sec text-center">
+                <a href="/static/certificates/{{ text.curriculum_path }}" class="ds-button">{{ text.headers.download_resume }}</a>
+            </div>
+        </section>
+    </div>
+</div>
+<!-- about -->
+<!--  Skills -->
+<div class="ds-skills-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <h2 class="ds-heading">{{ text.headers.core_skills }}</h2>
+                <ul class="ds-skills-list">
+                    {% for core_skill in text.core_skills %}
+                    <li>{{ core_skill }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <h2 class="ds-heading">{{ text.headers.other_skills }}</h2>
+                <ul class="ds-skills-list">
+                    {% for other_skill in text.other_skills %}
+                    <li>{{ other_skill }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  Skills -->
+<!-- Experience -->
+<div class="ds-experience-section">
+    <div class="container">
+        <h2 class="ds-heading">{{ text.headers.formation }}</h2>
+        <div class="row ds-experience-list">
+            {% for formation in text.formation %}
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <section>
+                    <span class="ds-year">{{ formation.timespan }}</span>
+                    <h3 class="ds-officename">{{ formation.school }}</h3>
+                    <span class="ds-department">{{ formation.course }}</span>
+                    <p>{{ formation.description }}</p>
+                </section>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- Experience -->
+<!--  Work -->
+<div class="ds-work-section">
+    <div class="container">
+        <h2 class="ds-heading">{{ text.headers.projects }}</h2>
+        <div class="ds-work-list-section">
+            {% for project in text.projects %}
+            <div class="ds-work-list">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
+                        <section>
+                            <h3 class="ds-work-tilte">{{ project.title }}</h3>
+                            <p>{{ project.description }}</p>
+                            <a href="{{ project.path }}" class="ds-button">{{ text.headers.projects_button }}</a>
+                        </section>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
+                        <figure><img src="/static/images/{{ project.image }}"></figure>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!--  Work -->
+<!--  footer -->
+<footer class="ds-footer text-center">
+    <div class="container">
+        <section>
+            <span>{{ text.footer.span }}</span>
+            <h4>{{ text.footer.h4 }}</h4>
+            <p>{{ text.footer.p }}</p>
+            <a href="mailto:kanbme@protonmail.com" class="ds-button">kanbme@protonmail.com</a>
+            <a href="tel:+5511934554764" class="ds-button">+55 11 93455 4764</a>
+            <a href="https://wa.me/5598988935761" class="ds-button"><i>WhatsApp</i></a>
+        </section>
+    </div>
+</footer>
+{% endblock %}
+

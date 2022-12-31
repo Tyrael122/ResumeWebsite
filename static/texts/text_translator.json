@@ -1,0 +1,8 @@
+{
+    "title": "Translator",
+    "input_placeholder": "Enter text",
+    "output_placeholder": "Translation",
+    "page_lang": "en",
+    "href_translation": "/pt-br/translator",
+    "selected_language": "english"
+}

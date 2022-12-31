@@ -1,0 +1,8 @@
+{
+    "title": "Tradutor",
+    "input_placeholder": "Escreva algo",
+    "output_placeholder": "Tradução",
+    "page_lang": "pt-br",
+    "href_translation": "/translator",
+    "selected_language": "portuguese"
+}

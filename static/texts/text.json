@@ -1,0 +1,79 @@
+{
+    "projects":
+    [
+        {
+            "title": "Python translator",
+            "description": "A web based Python translator, that uses Flask to process written text through the Translator API. It translate texts seamlessly, without one needing to reload the page.",
+            "image": "translator.png",
+            "path": "/translator"
+        },
+        {
+            "title": "USP - Python course",
+            "description": "A python course where we made a game as a final project.",
+            "image": "USP_logo.svg",
+            "path": "/static/certificates/Python - USP.pdf"
+        },
+        {
+            "title": "FIAP - Python course",
+            "description": "A python course I made later in 2022 so I could improve my Python skills.",
+            "image": "Fiap_logo.png",
+            "path": "/static/certificates/Certificado FIAP - Python.png"
+        },
+        {
+            "title": "FIAP - Java course",
+            "description": "A Java course I took which helped to hone my skills with OOP and Java.",
+            "image": "Fiap_logo.png",
+            "path": "/static/certificates/Certificado FIAP - Java.png"
+        },
+        {
+            "title": "Azure - Microsoft",
+            "description": "An Azure course where I refined concepts of cloud, cloud computing and how Azure itself works.",
+            "image": "Azure_logo.png",
+            "path": "/static/certificates/Azure Certificate - Microsoft.pdf"
+        },
+        {
+            "title": "CS50 - Harvard",
+            "description": "A Harvard Computer Science course in where I became better at Python and C. We also practiced Web Development with Python, using the Flask framework, with JavaScript, HTML/CSS, as well as databases using SQL. We have also learned data structures such as hash tables and linked lists.",
+            "image": "Harvard_logo.png",
+            "path": "/static/certificates/CS50x.png"
+        }
+    ],
+    "about_me": "I'm an IT student learning Python, C# and JavaScript along with HTML and CSS. I am fluent in English, and I've just finished Harvard's CS50x course. I'm now taking the CS university.",
+    "core_skills": ["Python", "C#", "English"],
+    "other_skills": ["JavaScript", "HTML", "CSS", "VBA", "C", "Java", "Azure", "SQL", "Office tools"],
+    "formation":
+    [
+        {
+            "school": "FATEC",
+            "course": "Analysis and Development of Systems",
+            "timespan": "2022 - Present",
+            "description": ""
+        },
+        {
+            "school": "MINDS",
+            "course": "English Course",
+            "timespan": "2021 - 2022",
+            "description": "An 18 months course, where I finished with an average grade of 95/100."
+        }
+    ],
+    "footer": 
+    {
+        "span": "Stay in touch",
+        "h4": "Ready to talk?",
+        "p": "Feel free to contact me"
+    },
+    "headers": 
+    {
+        "about_me": "About me",
+        "core_skills": "Core Skills",
+        "other_skills": "Other Skills",
+        "formation": "Academic Formation",
+        "projects": "Latest projects and certificates",
+        "projects_button": "See it",
+        "download_resume": "Download Resume"
+    },
+    "curriculum_path": "English curriculum.pdf",
+    "title": "Kauan - Portifolio",
+    "page_lang": "en",
+    "href_translation": "/pt-br"
+}

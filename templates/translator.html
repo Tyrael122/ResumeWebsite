@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block script %}
+<script src="/static/Javascript/translator.js"></script>
+{% endblock %}
+
+{% block stylesheet %}
+<link href="/static/CSS/translator.css" rel="stylesheet" />
+{% endblock %}
+
+{% block title %}
+Translator
+{% endblock %}
+
+{% block favicon %}
+<link rel="icon" href="/static/images/translate.ico">
+{% endblock %}
+
+
+{% block body %}
+
+<div class="header">
+    <h1>{{ text.title }}</h1>
+</div>
+
+<div class="centered" id="translatorArea">
+    <div>
+        <div class="d-flex justify-content-center">
+            <textarea class="form-control" id="sourceText" rows="10" name="textToTranslate" placeholder="{{ text.input_placeholder }}" autofocus></textarea>
+            <textarea class="form-control" id="outputText" rows="10" placeholder="{{ text.output_placeholder }}" readonly disabled>{{ translation }}</textarea>
+        </div>
+        <div class="d-flex justify-content-center">
+            <select name="lang_from" id="lang_from" class="form-select">
+                {% for language in langList %}
+                    {% if language == text.selected_language %}
+                        <option value="{{ language }}" selected="selected">{{ language }}</option>
+                    {% else %}
+                        <option value="{{ language }}">{{ language }}</option>
+                    {% endif %}
+                {% endfor %}
+            </select>
+            <select name="lang_to" id="lang_to" class="form-select">
+                {% for language in langList %}
+                <option value="{{ language }}">{{ language }}</option>
+                {% endfor %}
+            </select>
+        </div>
+    </div>
+</div>
+{% endblock %}

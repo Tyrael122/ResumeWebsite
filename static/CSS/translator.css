@@ -1,0 +1,16 @@
+.centered {
+    margin: auto;
+    width: 50%;
+}
+
+.header {
+    /*background-color: #477bff;*/
+    color: #000000;
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+#site-header {
+    padding-top: 2em;
+}

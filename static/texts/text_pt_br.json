@@ -1,0 +1,79 @@
+{
+    "projects":
+    [
+        {
+            "title": "Tradutor Python",
+            "description": "Um site tradutor feito em Python, que usa Flask para processar o texto escrito usando a API do Google Translator. Ele traduz textos ao mesmo tempo em que são escritos, sem precisar recarregar a página.",
+            "image": "translator.png",
+            "path": "/pt-br/translator"
+        },
+        {
+            "title": "USP - Python course",
+            "description": "Um curso de Python em que contruímos um jogo como projeto final.",
+            "image": "USP_logo.svg",
+            "path": "/static/certificates/Python - USP.pdf"
+        },
+        {
+            "title": "FIAP - Python course",
+            "description": "Um curso de Python que fiz para melhorar minhas habilidades com a linguagem.",
+            "image": "Fiap_logo.png",
+            "path": "/static/certificates/Certificado FIAP - Python.png"
+        },
+        {
+            "title": "FIAP - Java course",
+            "description": "A Java course I took which helped to hone my skills with OOP and Java.",
+            "image": "Fiap_logo.png",
+            "path": "/static/certificates/Certificado FIAP - Java.png"
+        },
+        {
+            "title": "Azure - Microsoft",
+            "description": "Um curso de Azure, pela Microsoft em que refinei o conceito de computação em nuvem e o funcionamento do Azure.",
+            "image": "Azure_logo.png",
+            "path": "/static/certificates/Azure Certificate - Microsoft.pdf"
+        },
+        {
+            "title": "CS50 - Harvard",
+            "description": "Um curso de Ciência da Computação por Harvard, em que trabalhamos com Python e C. Também praticamos Desenvolvimento Web com Python, usando o framework Flask, com JavaScript, HTML/CSS além de trabalhar com banco de dados usando SQL. Aprendemos também conceitos de estruturas de dados como hash tables e linked lists.",
+            "image": "Harvard_logo.png",
+            "path": "/static/certificates/CS50x.png"
+        }
+    ],
+    "about_me": "Sou um estudante de TI aprendendo Python, C# e JavaScript junto com HTML e CSS. Também sou fluente em inglês e recentemente finalizei o curso de Harvard de Ciência da Computação, CS50x. Além disso, sou estudante da FATEC e moro em São Paulo.",
+    "core_skills": ["Python", "C#", "Inglês"],
+    "other_skills": ["JavaScript", "HTML", "CSS", "VBA", "C", "Java", "Azure", "SQL", "Pacote Office"],
+    "formation":
+    [
+        {
+            "school": "FATEC",
+            "course": "Análise e Desenvolvimento de Sistemas",
+            "timespan": "2022 - Presente",
+            "description": ""
+        },
+        {
+            "school": "MINDS",
+            "course": "Curso de inglês",
+            "timespan": "2021 - 2022",
+            "description": "Um curso de 18 meses que acabei com uma média de 95/100."
+        }
+    ],
+    "footer": 
+    {
+        "span": "Mantenha-se em contato",
+        "h4": "Quer conversar?",
+        "p": "Sinta-se livre para me chamar"
+    },
+    "headers": 
+    {
+        "about_me": "Sobre mim",
+        "core_skills": "Principais habilidades",
+        "other_skills": "Outras habilidades",
+        "formation": "Formação",
+        "projects": "Projetos e certificados recentes",
+        "projects_button": "Veja",
+        "download_resume": "Faça o download do meu currículo"
+    },
+    "curriculum_path": "Currículo português.pdf",
+    "title": "Kauan - Portifólio",
+    "page_lang": "pt-br",
+    "href_translation": "/"
+}
