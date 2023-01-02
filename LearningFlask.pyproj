@@ -1,0 +1,159 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>fbaf5c18-3900-4640-94c4-43658f6c3bee</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
+    <ProjectTypeGuids>{789894c7-04a9-4a11-a6b5-3f4435165112};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>app.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+    <Name>LearningFlask</Name>
+    <RootNamespace>LearningFlask</RootNamespace>
+    <InterpreterId>MSBuild|deepTranslators|$(MSBuildProjectFullPath)</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app.py" />
+    <Compile Include="helpers.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TelegramBot\globals_vars.py" />
+    <Compile Include="TelegramBot\TelegramBotMain.py" />
+    <Compile Include="TelegramBot\Utilities\database.py" />
+    <Compile Include="TelegramBot\Utilities\helpers.py" />
+    <Compile Include="TelegramBot\Utilities\Processors\buy.py" />
+    <Compile Include="TelegramBot\Utilities\Processors\cart.py" />
+    <Compile Include="TelegramBot\Utilities\Processors\photo.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="requirements.txt" />
+    <Content Include="static\certificates\Certificado FIAP - Java.png" />
+    <Content Include="static\certificates\CS50x.png" />
+    <Content Include="static\certificates\Currículo português.pdf" />
+    <Content Include="static\certificates\English curriculum.pdf" />
+    <Content Include="static\images\Azure_logo.png" />
+    <Content Include="static\images\Fiap_logo.png" />
+    <Content Include="static\images\Harvard_logo.png" />
+    <Content Include="static\images\homepage.png" />
+    <Content Include="static\images\profileKauan.jpg" />
+    <Content Include="static\images\translator.png" />
+    <Content Include="static\images\USP_logo.svg" />
+    <Content Include="static\texts\text_orders.json" />
+    <Content Include="static\texts\text_translator_pt_br.json" />
+    <Content Include="static\texts\text_translator.json" />
+    <Content Include="static\texts\text_pt_br.json" />
+    <Content Include="static\texts\text.json" />
+    <Content Include="static\Javascript\translator.js" />
+    <Content Include="static\certificates\Azure Certificate - Microsoft.pdf" />
+    <Content Include="static\certificates\Certificado FIAP - Python.png" />
+    <Content Include="static\certificates\Python - USP.pdf" />
+    <Content Include="static\CSS\header_stripe.css" />
+    <Content Include="static\images\translate.ico" />
+    <Content Include="orders.db" />
+    <Content Include="pizzas.json" />
+    <Content Include="TelegramBot\product_images\pizza.jpg" />
+    <Content Include="TelegramBot\Utilities\Processors\README.md" />
+    <Content Include="TelegramBot\Utilities\Processors\__pycache__\buy.cpython-311.pyc" />
+    <Content Include="TelegramBot\Utilities\Processors\__pycache__\cart.cpython-311.pyc" />
+    <Content Include="TelegramBot\Utilities\Processors\__pycache__\photo.cpython-311.pyc" />
+    <Content Include="TelegramBot\Utilities\__pycache__\database.cpython-311.pyc" />
+    <Content Include="TelegramBot\Utilities\__pycache__\helpers.cpython-311.pyc" />
+    <Content Include="templates\orders.html" />
+    <Content Include="templates\fiapPython.html" />
+    <Content Include="templates\translator.html" />
+    <Content Include="static\CSS\main.css" />
+    <Content Include="static\Javascript\main.js" />
+    <Content Include="templates\layout.html" />
+    <Content Include="templates\index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="deepTranslators\">
+      <Id>deepTranslators</Id>
+      <Version>3.11</Version>
+      <Description>deepTranslators (Python 3.11 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>3.11</Version>
+      <Description>env (Python 3.11 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="static\" />
+    <Folder Include="static\certificates\" />
+    <Folder Include="static\Javascript\" />
+    <Folder Include="static\CSS\" />
+    <Folder Include="static\texts\" />
+    <Folder Include="TelegramBot\" />
+    <Folder Include="TelegramBot\product_images\" />
+    <Folder Include="TelegramBot\Utilities\" />
+    <Folder Include="TelegramBot\Utilities\Processors\" />
+    <Folder Include="TelegramBot\Utilities\Processors\__pycache__\" />
+    <Folder Include="TelegramBot\Utilities\__pycache__\" />
+    <Folder Include="templates\" />
+    <Folder Include="static\images\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

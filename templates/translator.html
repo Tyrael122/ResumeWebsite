@@ -1,11 +1,7 @@
-{% extends "layout.html" %}
+{% extends "header_stripe.html" %}
 
 {% block script %}
 <script src="/static/Javascript/translator.js"></script>
-{% endblock %}
-
-{% block stylesheet %}
-<link href="/static/CSS/translator.css" rel="stylesheet" />
 {% endblock %}
 
 {% block title %}
@@ -17,11 +13,7 @@ Translator
 {% endblock %}
 
 
-{% block body %}
-
-<div class="header">
-    <h1>{{ text.title }}</h1>
-</div>
+{% block mainbody %}
 
 <div class="centered" id="translatorArea">
     <div>

@@ -8,6 +8,12 @@
             "path": "/pt-br/translator"
         },
         {
+            "title": "TelegramBot - Python",
+            "description": "Um chatbot feito em Python para o Telegram. Você pode pedir pizzas por ele (ou qualquer outro produto) e irá aparecer um novo pedido na página de pedidos assim que o cliente finalizar sua compra. O username do bot é @SalesOrganizerBot, e seu nome é BuyerAssistant. O código está disponível no meu GitHub.",
+            "image": "Telegram_logo.svg",  
+            "path": "/orders"
+        },
+        {
             "title": "USP - Python course",
             "description": "Um curso de Python em que contruímos um jogo como projeto final.",
             "image": "USP_logo.svg",

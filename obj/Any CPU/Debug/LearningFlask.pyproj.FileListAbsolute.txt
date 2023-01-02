@@ -1,0 +1,4 @@
+C:\Users\Suporte\OneDrive - Fatec Centro Paula Souza\CS50\LearningFlask\obj\Any CPU\Debug\LearningFlask.pyproj.SuggestedBindingRedirects.cache
+C:\Users\Suporte\OneDrive - Fatec Centro Paula Souza\CS50\LearningFlask\obj\Any CPU\Debug\LearningFlask.pyproj.CoreCompileInputs.cache
+C:\Users\Suporte\OneDrive - Fatec Centro Paula Souza\Programs\Python\LearningFlask\obj\Any CPU\Debug\LearningFlask.pyproj.SuggestedBindingRedirects.cache
+C:\Users\Suporte\OneDrive - Fatec Centro Paula Souza\Programs\Python\LearningFlask\obj\Any CPU\Debug\LearningFlask.pyproj.CoreCompileInputs.cache

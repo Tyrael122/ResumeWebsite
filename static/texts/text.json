@@ -8,6 +8,12 @@
             "path": "/translator"
         },
         {
+            "title": "TelegramBot - Python",
+            "description": "A Telegram Bot made in Python. You can order pizzas through it (or any other product) and it will appear as an order in the orders page when the customer has completed his purchase. The bot is available at @SalesOrganizerBot, the username being BuyerAssistant. The code is available at my GitHub.",
+            "image": "Telegram_logo.svg",  
+            "path": "/orders"
+        },
+        {
             "title": "USP - Python course",
             "description": "A python course where we made a game as a final project.",
             "image": "USP_logo.svg",
